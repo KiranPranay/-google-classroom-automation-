@@ -2,26 +2,22 @@ import calendar
 from datetime import datetime
 import webbrowser
 
-subjects = {'monday' : ['DCCN', 'MPMC', 'WT','LUNCH BREAK', 'DMAA', 'CP', 'DCCN'],
-                'tuesday' : ['UNIX', 'DCCN', 'WT', 'LUNCH BREAK', 'RA', 'MPMC', 'WT'],
-                'wednesday' : ['WT', 'UNIX', 'DCCN', 'LUNCH BREAK', 'MPMC', 'DMAA', 'UNIX'],
-                'thursday' : ['MPMC', 'SS', 'DMMA', 'LUNCH BREAK', 'UNIX', 'DCCN', 'MPMC'],
-                'friday' : ['WT', 'DMAA', 'DCCN', 'LUNCH BREAK', 'MPMC', 'UNIX', 'DMAA'],
-                'saturday' : ['DMAA', 'WT', 'UNIX','LUNCH BREAK', 'UNIXLAB'],
-                'sunday' : ['WTLAB', 'AELSLAB', 'LUNCH BREAK', 'MPMCLAB']
+subjects = {'monday' : ['FFEM', 'CAD-CAM', 'NT'],
+                'tuesday' : ['HT', 'NT', 'R&AC'],
+                'wednesday' : ['FFEM', 'NT', 'HT-LAB'],
+                'thursday' : ['FFEM', 'HT', 'COI'],
+                'friday' : ['CAD-CAM', 'R&AC', 'HT'],
+                'saturday' : ['CAM-LAB', 'CAM-LAB', 'AECS_LAB']
               }
-classes = { 'DCCN':	'https://meet.google.com/lookup/filgrqri3s',
-            'MPMC' : 'https://meet.google.com/lookup/c2h3bvthzx',
-            'WT' : 'https://meet.google.com/lookup/frcfytzqw2',
-            'DMAA' : 'https://meet.google.com/lookup/ggjkhdmcfp',
-            'CP' :'',	
-            'UNIX' : 'https://meet.google.com/lookup/bziccis7kc',
-            'RA' : 'https://meet.google.com/lookup/hiexncufwt',
-            'SS' : 'https://meet.google.com/lookup/hw7pxhpgv3',
-            'WTLAB' : 'https://meet.google.com/lookup/brzpz3qiql',
-            'ELCS'	: 'https://meet.google.com/lookup/hdlj3ho6u2',
-            'MPMCLAB' :	'https://meet.google.com/lookup/hvdgtwo2yd',
-            'UNIXLAB' : 'https://meet.google.com/lookup/evfhggazrc'
+classes = { 'HT':	'https://meet.google.com/mcd-echr-pfy',
+            'NT' : 'https://meet.google.com/vzo-gevy-dtn',
+            'CAD-CAM' : 'https://meet.google.com/gsb-dkos-zsv',
+            'FFEM' : 'https://meet.google.com/kkt-czwj-aog',
+            'R&AC' :'https://meet.google.com/ngf-ceoy-yeb',
+            'HT-LAB' : '',
+            'CAM-LAB' : 'https://meet.google.com/awi-eypk-zdc',
+            'AECS_LAB' : '',
+            'COI' : ''
           }
 
 def find_day():
@@ -35,19 +31,14 @@ def find_classes():
     subs = []
     day = find_day()
     classes = subjects[day]
-    if day != 'saturday' and day != 'sunday':
-        timings = ['09:15 am - 10:15 am','10:30 am - 11:30 am', '11:45 am - 12:45 pm', '12:45 pm - 14:00 pm', '14:00 pm - 15:00 pm', '15:15 pm - 16:15 pm', '16:30 pm - 17:30 pm']
-        for i in range(7):
-            formatted = '{} {}'.format(timings[i],classes[i])
-            subs.append(formatted)
-    if day == 'saturday':
-        timings = ['09:15 am - 10:15 am','10:30 am - 11:30 am', '11:45 am - 12:45 pm', '12:45 pm - 14:00 pm', '14:00 pm - 17:30 pm']
-        for i in range(5):
+    if day != 'sunday':
+        timings = ['09:40 am - 10:40 am','10:50 am - 11:50 am', '12:00 pm - 13:00 pm']
+        for i in range(3):
             formatted = '{} {}'.format(timings[i],classes[i])
             subs.append(formatted)
     if day == 'sunday':
-        timings = ['07:30 am - 10:30 am', '10:45 am - 13:45 pm', '14:15 pm', '14:15 pm - 17:15 pm']
-        for i in range(4):
+        timings = ['09:40 am - 10:40 am','10:50 am - 11:50 am', '12:00 pm - 13:00 pm']
+        for i in range(3):
             formatted = '{} {}'.format(timings[i],classes[i])
             subs.append(formatted)
     return subs

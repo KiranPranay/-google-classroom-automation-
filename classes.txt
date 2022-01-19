@@ -1,20 +1,17 @@
-    subjects = {'monday' : ['DCCN', 'MPMC', 'WT','LUNCH BREAK', 'DMAA', 'CP', 'DCCN'],
-                'tuesday' : ['UNIX', 'DCCN', 'WT', 'LUNCH BREAK', 'RA', 'MPMC', 'WT'],
-                'wednesday' : ['WT', 'UNIX', 'DCCN', 'LUNCH BREAK', 'MPMC', 'DMAA', 'UNIX'],
-                'thursday' : ['MPMC', 'SS', 'DMMA', 'LUNCH BREAK', 'UNIX', 'DCCN', 'MPMC'],
-                'friday' : ['WT', 'DMAA', 'DCCN', 'LUNCH BREAK', 'MPMC', 'UNIX', 'DMAA'],
-                'saturday' : ['DMAA', 'WT', 'UNIX','LUNCH BREAK', 'UNIXLAB'],
-                'sunday' : ['WTLAB', 'AELSLAB', 'LUNCH BREAK', 'MPMCLAB']
+subjects = {'monday' : ['FFEM', 'CAD-CAM', 'NT'],
+                'tuesday' : ['HT', 'NT', 'R&AC'],
+                'wednesday' : ['FFEM', 'NT', 'HT-LAB'],
+                'thursday' : ['FFEM', 'HT', 'COI'],
+                'friday' : ['CAD-CAM', 'R&AC', 'HT'],
+                'saturday' : ['CAM-LAB', 'CAM-LAB', 'AECS_LAB']
               }
-classes = { 'DCCN':	'https://meet.google.com/lookup/filgrqri3s',
-            'MPMC' : 'https://meet.google.com/lookup/c2h3bvthzx',
-            'WT' : 'https://meet.google.com/lookup/frcfytzqw2',
-            'DMAA' : 'https://meet.google.com/lookup/ggjkhdmcfp',
-            'CP' :'',	
-            'UNIX' : 'https://meet.google.com/lookup/bziccis7kc',
-            'RA' : 'https://meet.google.com/lookup/hiexncufwt',
-            'SS' : 'https://meet.google.com/lookup/hw7pxhpgv3',
-            'WTLAB' : 'https://meet.google.com/lookup/brzpz3qiql',
-            'ELCS'	: 'https://meet.google.com/lookup/hdlj3ho6u2',
-            'MPMCLAB' :	'https://meet.google.com/lookup/hvdgtwo2yd'
+classes = { 'HT':	'https://meet.google.com/mcd-echr-pfy',
+            'NT' : 'https://meet.google.com/vzo-gevy-dtn',
+            'CAD-CAM' : 'https://meet.google.com/gsb-dkos-zsv',
+            'FFEM' : 'https://meet.google.com/kkt-czwj-aog',
+            'R&AC' :'https://meet.google.com/ngf-ceoy-yeb',
+            'HT-LAB' : '',
+            'CAM-LAB' : 'https://meet.google.com/awi-eypk-zdc',
+            'AECS_LAB' : '',
+            'COI' : ''
           }
