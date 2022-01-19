@@ -14,10 +14,10 @@ classes = { 'HT':	'https://meet.google.com/mcd-echr-pfy',
             'CAD-CAM' : 'https://meet.google.com/gsb-dkos-zsv',
             'FFEM' : 'https://meet.google.com/kkt-czwj-aog',
             'R&AC' :'https://meet.google.com/ngf-ceoy-yeb',
-            'HT-LAB' : '',
+            'HT-LAB' : 'https://meet.google.com/ngf-ceoy-yeb',
             'CAM-LAB' : 'https://meet.google.com/awi-eypk-zdc',
-            'AECS_LAB' : '',
-            'COI' : ''
+            'AECS_LAB' : 'https://meet.google.com/ngf-ceoy-yeb',
+            'COI' : 'https://meet.google.com/ngf-ceoy-yeb'
           }
 
 def find_day():
